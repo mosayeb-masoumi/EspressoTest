@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinTest</string>
+    <string name="main_text">text content in main Activity</string>
+</resources>

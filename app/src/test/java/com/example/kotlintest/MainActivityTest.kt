@@ -1,6 +1,6 @@
 package com.example.kotlintest
 
-//import org.junit.Assert.*
+import org.junit.Assert.*
 
 import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
@@ -13,12 +13,23 @@ import org.junit.runners.JUnit4
 class MainActivityTest{
 
 
-
     @Test
-    fun getTitleFromServer_correctSum() {
-        val mainActivity = MainActivity()
-        val result = mainActivity.getTitleFromServer(1, 5)
-//        assertEquals(6, result)
-        assertThat(result).isEqualTo(6)
+    fun testGetTitleFromServer() {
+        val firstNum = 5
+        val secondNum = 10
+        val expectedResult = 15
+
+        val result = MainActivity().getTitleFromServer(firstNum, secondNum)
+
+        assertEquals(expectedResult, result)
     }
+
+
+//    @Test
+//    fun getTitleFromServer() {
+////        val mainActivity = MainActivity().getTitleFromServer(1,3)
+//        val result = MainActivity().getTitleFromServer(1,3)
+////        assertEquals(6, result)
+//        assertThat(result).isEqualTo(6)
+//    }
 }

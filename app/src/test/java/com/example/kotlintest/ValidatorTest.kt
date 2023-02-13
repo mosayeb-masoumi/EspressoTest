@@ -10,6 +10,7 @@ import org.junit.runners.JUnit4
 @RunWith(JUnit4::class)
 class ValidatorTest{
 
+//    https://www.youtube.com/watch?v=rM25aJ0o3Us
     @Test
     fun whenInputIsValid(){
         val amount = 100

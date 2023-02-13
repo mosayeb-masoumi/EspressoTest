@@ -14,11 +14,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnMain.setOnClickListener {
+
+            val total = getTitleFromServer(1 , 5)
+            var a = total
             startActivity(Intent(this@MainActivity , SecondActivity::class.java))
         }
     }
 
-    override fun onResume() {
-        super.onResume()
+    fun getTitleFromServer(firstNum: Int, secondNum: Int): Int {
+
+        return firstNum + secondNum
+
     }
+
 }

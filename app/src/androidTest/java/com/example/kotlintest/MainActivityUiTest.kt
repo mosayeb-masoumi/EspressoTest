@@ -13,7 +13,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class MainActivityTest{
+class MainActivityUiTest{
 
     //this variable will global for all fun that will be create
     @get:Rule var activityScenarioRule = activityScenarioRule<MainActivity>()

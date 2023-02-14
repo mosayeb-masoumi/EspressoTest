@@ -50,6 +50,10 @@ android {
 //        exclude("META-INF/*.kotlin_module")
     }
 
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -67,6 +71,12 @@ dependencies {
     androidTestImplementation 'androidx.test:core:1.5.0'
 
     androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.5'
+
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    testImplementation 'com.google.truth:truth:1.1.2'
+    androidTestImplementation 'com.google.truth:truth:1.1.2'
+
 
 
     //   to recognize viewModelScope  in viewModel

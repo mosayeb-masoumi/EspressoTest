@@ -8,7 +8,7 @@
     android:gravity="center"
     android:layout_gravity="center"
     android:id="@+id/mainactivity_root"
-    tools:context=".MainActivity">
+    tools:context=".main_activity.MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="150dp"
